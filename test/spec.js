@@ -36,10 +36,10 @@ describe('data layer', () => {
         describe('POST /api/users', () => {
             it('returns the users', () => {
                 return app.post('/api/users')
-                    .send({ name: 'Bob'})    
-                    .expect(200)
+                    .send({ name: 'Bob' })
+                    .expect(201)
                     .then(response => {
-                        expect(response.body.length).to.equal(3);
+                        expect(response.body.id).to.not.equal(null);
                     });
             });
         });
