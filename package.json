@@ -1,0 +1,23 @@
+{
+  "name": "acme_user_departments_api_tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:dev": "mocha test/spec.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.0",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^7.18.2",
+    "sequelize": "^5.21.5"
+  }
+}
